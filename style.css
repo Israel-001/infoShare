@@ -1,0 +1,263 @@
+/*
+    GLORY BE TO GOD,
+    InfoShare - Website
+    By Israel Mafabi Emmanuel
+*/
+
+:root {
+    --is-black: rgb(7, 7, 7);
+    --is-background-white-transparent: rgba(210, 217, 224, 0.4);
+    --is-background-blue-transparent: rgba(0, 119, 255, 0.05);
+    --is-background-blue-bright: rgb(0, 119, 255);
+    --is-background-blue-normal: rgb(0, 101, 216);
+    --is-background-blue-normal-transparent: rgba(0, 101, 216, 0.4);
+    --is-background-blue-dark: rgb(0, 66, 141);
+    --is-background-red-normal: rgb(255, 51, 0);
+    --is-background-pink: rgb(255, 59, 92);
+    --is-background-purple: rgb(204, 32, 204);
+    --is-background-black: rgb(58, 58, 58);
+    --is-background-black-bright: rgb(80, 80, 80);
+    --is-text-color-white: white;
+    --is-text-color-gray: rgb(138, 138, 138);
+    --is-text-color-black: rgb(34, 34, 34);
+    --is-text-color-black-transparent: rgba(34, 34, 34, 0.4);
+    --is-shadow-color-gray: rgb(54, 54, 54);
+    --is-transparent: rgba(0, 0, 0, 0);
+
+    --is-default-font: 'Nunito', sans-serif;
+
+    --is-font-size-100: 30px;
+    --is-font-size-90: 28px;
+    --is-font-size-80: 26px;
+    --is-font-size-70: 24px;
+    --is-font-size-60: 22px;
+    --is-font-size-50: 20px;
+    --is-font-size-40: 18px;
+    --is-font-size-30: 16px;
+    --is-font-size-20: 14px;
+    --is-font-size-10: 12px;
+    --is-font-size-0: 10px;
+
+    --is-shadow: 0px 0px 14px var(--is-shadow-color-gray);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--is-default-font);
+    margin: 0px;
+    outline: none;
+    user-select: none;
+    transition: 0.5s;
+}
+
+body {
+    background: 
+        radial-gradient(
+            circle at top left, 
+            var(--is-background-blue-normal), 
+            var(--is-background-blue-dark) 20%, 
+            var(--is-text-color-black) 75%
+        )
+    ;
+    background-color: var(--is-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.is_startup_sp {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.is_startup_sp .is_header_sp {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp {
+    background-color: var(--is-text-color-black-transparent);
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_title_sp {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 200px;
+    height: 50px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_title_sp .title {
+    color: var(--is-text-color-white);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 14px;
+    margin-right: 14px;
+    width: 100px;
+    height: 50px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_title_sp .title .separate {
+    color: var(--is-background-blue-bright);
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_links_sp {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 300px;
+    height: 40px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_links_sp .is_nav_links_trigger_sp {
+    background-color: var(--is-text-color-black-transparent);
+    color: var(--is-text-color-white);
+    border-top: 1px solid var(--is-transparent);
+    border-left: 1px solid var(--is-transparent);
+    border-right: 1px solid var(--is-transparent);
+    border-bottom: 1px solid var(--is-transparent);
+    font-size: var(--is-font-size-20);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 100px;
+    height: 30px;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_links_sp .is_nav_links_trigger_sp:hover {
+    border-top: 1px solid var(--is-transparent);
+    border-left: 1px solid var(--is-transparent);
+    border-right: 1px solid var(--is-transparent);
+    border-bottom: 1px solid var(--is-text-color-white);
+    cursor: pointer;
+}
+
+.is_startup_sp .is_header_sp .is_nav_sp .is_nav_links_sp .is_nav_links_trigger_sp:active {
+    border-top: 1px solid var(--is-transparent);
+    border-left: 1px solid var(--is-transparent);
+    border-right: 1px solid var(--is-transparent);
+    border-bottom: 1px solid var(--is-transparent);
+}
+
+.is_startup_sp .is_body_sp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 400px;
+}
+
+.is_startup_sp .is_body_sp .is_body_site_information {
+    color: var(--is-text-color-white);
+    font-size: var(--is-font-size-70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 28px;
+    width: 400px;
+    height: 400px;
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-right: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_join_today {
+    background-color: var(--is-transparent);
+    border: 1px solid var(--is-text-color-white);
+    border-radius: 28px;
+    color: var(--is-text-color-white);
+    font-size: var(--is-font-size-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_join_today:hover {
+    background-color: var(--is-text-color-white);
+    color: var(--is-black);
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_join_today:active {
+    background-color: var(--is-transparent);
+    color: var(--is-text-color-white);
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_access {
+    background-color: var(--is-text-color-white);
+    border: 1px solid var(--is-text-color-white);
+    border-radius: 28px;
+    color: var(--is-black);
+    font-size: var(--is-font-size-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_access:hover {
+    background-color: var(--is-transparent);
+    color: var(--is-text-color-white);
+}
+
+.is_startup_sp .is_body_sp .is_body_access_btns .access_btn_access:active {
+    background-color: var(--is-text-color-white);
+    color: var(--is-black);
+}
+
+.is_footer_sp {
+    background-color: var(--is-text-color-black-transparent);
+    backdrop-filter: blur(7px);
+    color: var(--is-text-color-white);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+}
